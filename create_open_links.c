@@ -4,9 +4,16 @@
 #include <math.h>
 
 #include "_crossplay.h"
-#include "create_open_links/create_links.h"
+#include "projects/create_open_links/create_links.h"
 
 void open_tabs();
+
+int main(){
+    create_linksFile_v2();
+    open_tabs();
+
+    return 0;
+}
 
 void open_tabs(){
     char *lnk;
@@ -22,11 +29,4 @@ void open_tabs(){
         pause();
     }
     fclose(f);
-}
-
-int main(){
-    create_linksFile_v2();
-    open_tabs();
-
-    return 0;
 }
