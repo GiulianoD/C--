@@ -1,18 +1,20 @@
 #include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
 
-int main(){
-    char *parent;
-    strcpy(parent, __FILE__);
+char *parent_folder(char *path){
+    int i = strlen(path);
+    char *parent = malloc(i);
+    strcpy(parent, path);
 
-    int i = strlen(__FILE__);
-    while (__FILE__[i] != '\\' && parent[i] != '/' )
+    while (path[i] != '\\' && parent[i] != '/' )
         i--;
 
     parent[i]=0;
 
-    printf("%s\n", __FILE__);
+    printf("%s\n", path);
+    printf("%d", sizeof(path));
     printf("%s\n", parent);
 
-    return 0;
+    return parent;
 }

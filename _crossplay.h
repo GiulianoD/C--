@@ -36,9 +36,11 @@
 
 #include "_crossplay/system_commons.c"
 #include "_crossplay/file_commons.c"
+#include "_crossplay/parent_folder.c"
 
 void pause();
 void open_chrome(const char *lnk);
 FILE *open_file(const char *path, const char *mode);
+char *parent_folder(char *path);
 
 #endif

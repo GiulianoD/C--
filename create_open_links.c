@@ -9,9 +9,14 @@
 void open_tabs();
 
 int main(){
-    create_linksFile_v2();
-    open_tabs();
+    //create_linksFile_v2();
+    //open_tabs();
 
+    /*char *parent = parent_folder(__FILE__);
+
+    printf("%s", parent);*/
+
+    printf("%s\n", __FILE__);
     return 0;
 }
 
