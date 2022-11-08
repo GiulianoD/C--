@@ -1,6 +1,6 @@
 #include <stdio.h> // printf
 #include <stdlib.h> // malloc & free
-#include <conio.h> // getch & putch & clrscr
+#include <conio.h> // getch & putch
 
 #define ASCII_BKSPC 8 // backspack on ascII
 #define ASCII_LNBRK 10 // line break on ascII
